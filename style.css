@@ -116,22 +116,48 @@ h1 .sub_title {
     margin-top: 3px;
 }
 
-.form_contact{
-    margin: 50 px;
-    padding: 50 px;
+.card {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 28px;
+    border: 1px solid #193651;
+    border-radius: 8px;
+    background: #081f39;
+    color: var(--white);
+    font-family: Inter, system-ui, sans-serif;
+    transition: transform .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--cyan);
+    box-shadow: 0 16px 40px #00000020;
+}
+
+.form_contact {
+    margin-top: 100px;
     border: 1px solid cyan;
     border-radius: 20px;
     border-color: #00f5df;
 }
 
-.form_contact form{
+.form_contact form {
     padding: 50px;
 }
 
-.form_contact h3{
+.form_contact h3 {
     color: white;
 }
 
-.form_contact p{
+.form_contact p {
     color: cyan;
+}
+
+footer{
+    text-align: center;
+    background-color: #193651;
+    padding: 20px;
 }
