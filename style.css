@@ -115,3 +115,23 @@ h1 .sub_title {
     font-weight: 750;
     margin-top: 3px;
 }
+
+.form_contact{
+    margin: 50 px;
+    padding: 50 px;
+    border: 1px solid cyan;
+    border-radius: 20px;
+    border-color: #00f5df;
+}
+
+.form_contact form{
+    padding: 50px;
+}
+
+.form_contact h3{
+    color: white;
+}
+
+.form_contact p{
+    color: cyan;
+}
