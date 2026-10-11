@@ -59,7 +59,11 @@ a {
     text-decoration: none;
 }
 
-.nav { display: flex; align-items: center; gap: 28px; }
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
 
 nav ul {
     margin-top: 80px;
@@ -82,4 +86,32 @@ nav ul {
 
 li {
     margin: 20px;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    letter-spacing: -2.4px;
+    line-height: 1.2;
+    margin: 0;
+    font-weight: 750;
+    color: var(--white);
+}
+
+main {
+    width: min(900px, calc(100% - 48px));
+    margin: 151px auto 0;
+    padding-bottom: 150px;
+}
+
+.kwms {
+    color: var(--cyan);
+    font: 14px var(--mono);
+    margin: 0 0 20px 3px;
+}
+
+h1 .sub_title {
+    display: block;
+    color: var(--muted);
+    font-weight: 750;
+    margin-top: 3px;
 }
