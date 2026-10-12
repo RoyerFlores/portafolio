@@ -98,6 +98,14 @@ li {
     margin: 20px;
 }
 
+#btn-menu {
+    display: none;
+}
+
+nav ul.open{
+    display: flex;
+}
+
 h1 {
     font-size: clamp(2.5rem, 4vw, 4rem);
     letter-spacing: -2.4px;
@@ -195,6 +203,12 @@ footer {
 }
 
 @media (max-width: 600px) {
+    #btn-menu {
+        background-color: #061932;
+        display: block;
+        color: #00f5df;
+    }
+
     .nav {
         display: flex;
         justify-content: center;
@@ -202,12 +216,13 @@ footer {
     }
 
     nav ul {
-        margin-top: 50px;
+        display: none;
+        margin-top: 200px;
         float: left;
-        display: flex;
         flex-direction: column;
+        align-items: center;
         list-style: none;
-        margin-bottom: 1px;
+        gap: 10px;
     }
 
     .nav a {
