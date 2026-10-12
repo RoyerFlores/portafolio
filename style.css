@@ -99,7 +99,7 @@ main {
 
 .kwms {
     color: var(--cyan);
-    font: 14px var(--mono);
+    font: 16px var(--mono);
     margin: 0 0 20px 3px;
 }
 
@@ -108,6 +108,13 @@ h1 .sub_title {
     color: var(--muted);
     font-weight: 750;
     margin-top: 3px;
+}
+
+h2 {
+    color: white;
+}
+section{
+    margin-top: 60px;
 }
 
 .card {
@@ -129,6 +136,15 @@ h1 .sub_title {
     transform: translateY(-5px);
     border-color: var(--cyan);
     box-shadow: 0 16px 40px #00000020;
+}
+
+.card h3{
+    color: cyan;
+}
+
+.card img{
+    width: 200px;
+    height: auto;
 }
 
 .form_contact {
