@@ -20,7 +20,9 @@
           font-weight="600">KWMs</text>
       </svg>
     </a>
+    <button type="button" id="btn-theme" class="btn-mode">Modo día</button>
     <nav class="nav">
+      <button type="button" id="btn-menu" class="burguer">☰ Menú</button>
       <ul>
         <li><a href="#desarrollo"><span class="num">01.</span>Desarrollo</a></li>
         <li><a href="#experiencia"><span class="num">02.</span>Experiencia</a></li>
@@ -133,5 +135,23 @@
     <p>&copy; 2026 Royer Flores. Todos los derechos reservados.</p>
   </footer>
 </body>
+
+<script>
+  const body = document.querySelector("body");
+  const botonMode = document.querySelector("#btn-theme");
+  let day = false;
+
+  function alternarModo() {
+    body.classList.toggle("light");
+    day = !day;
+    if (day) {
+      botonMode.textContent = "Modo Oscuro"
+    } else {
+      botonMode.textContent = "Modo Claro"
+    }
+  }
+
+  botonMode.addEventListener("click", alternarModo);
+</script>
 
 </html>
