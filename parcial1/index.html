@@ -1,43 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lavandería Burbujas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header id="inicio">
-        <h1>LAVANDERÍA BURBUJAS</h1>
-        <br>
-        <nav class="nav">
-            <ul>
-                <li><a href="#inicio">INICIO</a></li>
-                <li><a href="#lavados">NUESTROS LAVADOS</a></li>
-                <li><a href="#contacto">CONTACTO</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <h1>LAVANDERÍA BURBUJAS</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#lavados">NUESTROS LAVADOS</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section id="lavados">
+
+    <main class="container">
+        <!-- Sección de Lavados como Tarjeta Principal -->
+        <section id="lavados" class="card">
             <h2>Nuestros Lavados</h2>
-            <p>
-                En Lavandería Burbuja nos encargamos de limpiar tus prendas para que disfrutes de tu tiempo libre.
+            <p class="descripcion">
+                En Lavandería Burbujas nos encargamos de limpiar tus prendas para que disfrutes de tu tiempo libre.
                 Ofrecemos un servicio de lavado, secado y planchado rápido, impecable y con el mayor cuidado para todo
                 tipo de ropa. Déjanos el trabajo sucio y vuelve a estrenar tu ropa limpia, fresca y suave como el primer
                 día. ¡Visítanos y siente la frescura en cada lavado!
             </p>
-            <ul>
-                <li>Lavado por kilo Bs. 15</li>
-                <li>Planchado de camisa Bs. 8</li>
-                <li>Lavado de edredon Bs. 35</li>
+
+            <ul class="lista-lavados">
+                <li>
+                    <span class="servicio-nombre">Lavado por kilo</span>
+                    <span class="servicio-precio">Bs. 15</span>
+                </li>
+                <li>
+                    <span class="servicio-nombre">Planchado de camisa</span>
+                    <span class="servicio-precio">Bs. 8</span>
+                </li>
+                <li>
+                    <span class="servicio-nombre">Lavado de edredón</span>
+                    <span class="servicio-precio">Bs. 35</span>
+                </li>
             </ul>
         </section>
 
-        <section id="contacto">
-            <h2>Deja tu encargo!</h2>
+        <section id="contacto" class="card">
+            <h2>Deja tu encargo</h2>
             <form action="" id="form-contacto">
                 <label for="nombre">Nombre completo</label>
                 <input id="nombre" type="text" placeholder="Ej. Juan Pérez" required>
@@ -49,13 +62,15 @@
                 <textarea id="encargo" rows="4" placeholder="Describe lo que necesitas lavar..."></textarea>
 
             </form>
-                    <button type="button" id="btn-confirmar">CONFIRMAR ENCARGO</button>
-                    <p id="mensaje" class="oculto"></p>
+            <button type="button" id="btn-confirmar">CONFIRMAR ENCARGO</button>
+            <p id="mensaje" class="oculto"></p>
         </section>
     </main>
+
     <footer>
-        Parcial 1 - Royer Joel Flores Aruquipa - 12 de octubre de 2026
+        <p>Parcial 1 - Royer Joel Flores Aruquipa - 12 de octubre de 2026</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
