@@ -5,43 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
 </head>
 
 <body>
-    <header>
+    <header id="inicio">
         <h1>LAVANDERÍA BURBUJAS</h1>
-        <nav>
+        <br>
+        <nav class="nav">
             <ul>
                 <li><a href="#inicio">INICIO</a></li>
-                <li><a href="#servicios">SERVICIOS</a></li>
+                <li><a href="#lavados">NUESTROS LAVADOS</a></li>
                 <li><a href="#contacto">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Nuestros Servicios</h2>
+        <section id="lavados">
+            <h2>Nuestros Lavados</h2>
+            <p>
+                En Lavandería Burbuja nos encargamos de limpiar tus prendas para que disfrutes de tu tiempo libre.
+                Ofrecemos un servicio de lavado, secado y planchado rápido, impecable y con el mayor cuidado para todo
+                tipo de ropa. Déjanos el trabajo sucio y vuelve a estrenar tu ropa limpia, fresca y suave como el primer
+                día. ¡Visítanos y siente la frescura en cada lavado!
+            </p>
             <ul>
-                <li>Lavado completo (por kilo)</li>
-                <li>Secado</li>
-                <li>Planchado</li>
+                <li>Lavado por kilo Bs. 15</li>
+                <li>Planchado de camisa Bs. 8</li>
+                <li>Lavado de edredon Bs. 35</li>
             </ul>
         </section>
 
-        <section>
+        <section id="contacto">
+            <h2>Deja tu encargo!</h2>
             <form action="">
-                <label for="">Nombre<label>
-                        <input type="text">
-                        <label for="">Número de Cel.</label>
-                        <input type="number">
+                <label for="">Nombre completo<label>
+                        <input type="text" required>
                         <label for="">Correo Electrónico</label>
                         <input type="email" required>
-                        <button type="submit">ENVIAR</button>
-            </form>
+                        <label for="">Tu encargo</label>
+                        <textarea name="" id="encargo"></textarea>
+                    </form>
+                    <button type="button" id="btn-confirmar">CONFIRMAR ENCARGO</button>
+                    <p id="mensaje" class="oculto"></p>
         </section>
     </main>
     <footer>
-        
+        Parcial 1 - Royer Joel Flores Aruquipa - 12 de octubre de 2026
     </footer>
 </body>
 
