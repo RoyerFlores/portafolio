@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="script" href="script.js">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -39,14 +38,17 @@
 
         <section id="contacto">
             <h2>Deja tu encargo!</h2>
-            <form action="">
-                <label for="">Nombre completo<label>
-                        <input type="text" required>
-                        <label for="">Correo Electrónico</label>
-                        <input type="email" required>
-                        <label for="">Tu encargo</label>
-                        <textarea name="" id="encargo"></textarea>
-                    </form>
+            <form action="" id="form-contacto">
+                <label for="nombre">Nombre completo</label>
+                <input id="nombre" type="text" placeholder="Ej. Juan Pérez" required>
+
+                <label for="email">Correo Electrónico</label>
+                <input id="email" type="email" placeholder="ejemplo@correo.com" required>
+
+                <label for="encargo">Tu encargo</label>
+                <textarea id="encargo" rows="4" placeholder="Describe lo que necesitas lavar..."></textarea>
+
+            </form>
                     <button type="button" id="btn-confirmar">CONFIRMAR ENCARGO</button>
                     <p id="mensaje" class="oculto"></p>
         </section>
@@ -55,5 +57,5 @@
         Parcial 1 - Royer Joel Flores Aruquipa - 12 de octubre de 2026
     </footer>
 </body>
-
+<script src="script.js"></script>
 </html>
