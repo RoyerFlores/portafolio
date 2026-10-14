@@ -117,16 +117,22 @@
 
     <section id="contacto">
       <div class="form_contact">
-        <form action="">
+        <form action="" method="post">
           <h3>Contacto</h3>
-          <p>Nombre</p>
-          <input type="text" placeholder="Nombre completo">
-          <p>Correo Electrónico</p>
-          <input type="email" placeholder="ejemplo@correo.com">
-          <p>Teléfono</p>
-          <input type="number" placeholder="00000000">
-          <p>Mensaje</p>
-          <textarea rows="10" cols="20" placeholder="Escribe tu mensaje"> </textarea>
+
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" autocomplete="name" required>
+
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" autocomplete="email" required>
+
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="Ej. 71234567" autocomplete="tel">
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+
+          <button type="submit">Enviar mensaje</button>
         </form>
       </div>
     </section>
@@ -140,7 +146,7 @@
   const body = document.querySelector("body");
   const botonMode = document.querySelector("#btn-theme");
 
-  const botonMenu=document.querySelector("#btn-menu");
+  const botonMenu = document.querySelector("#btn-menu");
   const menu = document.querySelector("nav ul");
 
   let day = false;
@@ -155,7 +161,7 @@
     }
   }
 
-  function alternarMenu(){
+  function alternarMenu() {
     menu.classList.toggle("open");
   }
 
