@@ -233,8 +233,8 @@ section {
     margin-top: 14px;
     padding: 13px 24px;
 
-    background: transparent;
-    color: var(--cyan);
+    background: cyan;
+    color: var(--navy);
 
     border: 1px solid var(--cyan);
     border-radius: 8px;
@@ -257,6 +257,28 @@ section {
     color: var(--navy-deep);
     box-shadow: 0 0 22px #00f5df25;
     transform: translateY(-2px);
+}
+
+.warning {
+    display: none;
+    margin-top: 14px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.warning.error {
+    display: block;
+    background-color: var(--navy-deep);
+    color: var(--muted);
+    border: 2px solid #e05555;
+}
+
+.warning.success {
+    display: block;
+    background-color: var(--navy-deep);
+    color: var(--cyan);
+    border: 2px solid #3fbf6a;
 }
 
 footer {
