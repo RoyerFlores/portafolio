@@ -117,7 +117,7 @@
 
     <section id="contacto">
       <div class="form_contact">
-        <form action="" method="post" id="contact-form" novalidate>
+        <form action="process.php" method="post" id="contact-form" novalidate>
           <h3>Contacto</h3>
 
           <label for="nombre">Nombre completo</label>

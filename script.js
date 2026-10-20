@@ -44,7 +44,7 @@ function contactReview(event) {
     contactWarning.classList.remove("error");
   }
 
-  contactForm.addEventListener("submit", revisar)
+  contactForm.submit();
 }
 
 botonMode.addEventListener("click", alternarModo);
