@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Salteñeria El Horno</title>
+</head>
+<body>
+    <header>
+        <h1>Salteñería El Horno</h1>
+    </header>
+
+    <p>Preparamos salteñas deliciosas y refrescos para disfrutar en cualquier momento.</p>
+
+    <form id="form-horno" novalidate method="POST" action="procesar.php">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <br><br>
+
+        <label for="correo">Correo electronico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <br><br>
+
+        <label for="pedido">Que saltenas queres:</label>
+        <textarea id="pedido" name="pedido"></textarea>
+
+        <br><br>
+
+        <button type="submit">Hacer mi pedido</button>
+        <p id="aviso-horno" class="aviso"></p>
+    </form>
+
+    <footer>
+        Parcial 2 - TU NOMBRE COMPLETO - 20 de octubre de 2026
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
