@@ -11,16 +11,16 @@ echo "Correo: " . $correo . "<br>";
 echo "Pedido: " . $pedido . "<br>";
 
 $productos = [
-    "Saltena de pollo - Bs 6",
-    "Docena de saltenas - Bs 65",
+    "Salteña de pollo - Bs 6",
+    "Docena de salteñas - Bs 65",
     "Refresco de mocochinchi - Bs 5"
 ];
 
-echo "<h2>Carta de la salteneria</h2>";
+echo "<h2>Carta de la salteñeria</h2>";
 
 foreach ($productos as $producto) {
     echo $producto . "<br>";
 }
 
-echo "<p>Te atiende TU NOMBRE COMPLETO</p>";
+echo "<p>Te atiende Royer J Flores Aruquipa</p>";
 ?>
