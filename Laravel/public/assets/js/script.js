@@ -24,27 +24,33 @@ function alternarMenu() {
 }
 
 function contactReview(event) {
-  event.preventDefault();
+  event.preventDefault(); // Evita el envío automático por defecto
 
-  const nombre = document.querySelector("#nombre").value;
-  const correo = document.querySelector("#correo").value;
+  const nombre = document.querySelector("#nombre").value.trim();
+  const correo = document.querySelector("#correo").value.trim();
+  const telefono = document.querySelector("#telefono").value.trim();
+  const mensaje = document.querySelector("#mensaje").value.trim();
 
   if (nombre === "") {
     contactWarning.textContent = "Nombre vacío, rellene por favor";
     contactWarning.classList.add("error");
     contactWarning.classList.remove("success");
-  } else if (correo.includes("@") === false) {
+  } else if (!correo.includes("@")) {
     contactWarning.textContent = "Introduzca un correo válido";
     contactWarning.classList.add("error");
     contactWarning.classList.remove("success");
+  } else if (telefono === "") {
+    contactWarning.textContent = "Introduzca un teléfono válido";
+    contactWarning.classList.add("error");
+    contactWarning.classList.remove("success");
+  } else if (mensaje === "") {
+    contactWarning.textContent = "Introduzca un mensaje válido";
+    contactWarning.classList.add("error");
+    contactWarning.classList.remove("success");
+  } else {
+    // Se envía el formulario ÚNICAMENTE si todo es correcto
+    contactForm.submit();
   }
-  else {
-    contactWarning.textContent = "Mensaje enviado correctamente! te contactaremos lo antes posible";
-    contactWarning.classList.add("success");
-    contactWarning.classList.remove("error");
-  }
-
-  contactForm.submit();
 }
 
 botonMode.addEventListener("click", alternarModo);

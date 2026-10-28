@@ -1,6 +1,8 @@
 <?php
 
 use App\Models\Torta;
+use App\Models\User;
+use App\Models\message;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -19,6 +21,30 @@ Route::get('/cv', function () {
 
 Route::get('/login', function () {
     return view('login');
+});
+
+Route::post('/contact', function (Request $request) {
+    $request->validate([
+        'nombre' => 'required',
+        'correo' => 'required|email',
+        'telefono' => 'required',
+        'mensaje' => 'required'
+    ], [
+        'nombre.required' => 'Indica tu nombre.',
+        'correo.required' => 'Indica tu correo.',
+        'correo.email' => 'Indica un correo válido.',
+        'telefono.required' => 'Indica un teléfono.',
+        'mensaje.required' => 'Escribe un mensaje.'
+    ]);
+
+    message::create([
+        'name' => $request->nombre,
+        'email' => $request->correo,
+        'tel' => $request->telefono,
+        'message' => $request->mensaje,
+    ]);
+
+    return back()->with('success', 'Mensaje enviado correctamente.');
 });
 
 Route::post('/login', function () {
