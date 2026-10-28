@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Royer Flores - Software Developer')
 @section('main')
     <section id="inicio">
       <p class="kwms">KWMStudios</p>
