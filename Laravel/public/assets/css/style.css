@@ -28,11 +28,6 @@ body {
     padding-left: 0px;
 }
 
-body.light {
-    background-color: white;
-    color: var(--navy-deep);
-}
-
 header {
     color: #CAD7F8;
     padding: 20px;
@@ -116,6 +111,22 @@ li {
 
 nav ul.open {
     display: flex;
+}
+
+.logout {
+    background-color: transparent;
+    padding: 10px 20px;
+    color: #00f5df;
+    border: none;
+    border-radius: 20px;
+    font: inherit;
+    font-weight: bold;
+}
+
+.logout:hover {
+    background-color: #00f5df;
+    color: #061932;
+    cursor: pointer;
 }
 
 h1 {
@@ -307,6 +318,102 @@ footer {
     padding: 20px;
 }
 
+body.light {
+    background-color: #f8fafc;
+    color: #334155;
+}
+
+body.light h1,
+body.light h2,
+body.light header {
+    color: var(--navy-deep);
+}
+
+body.light h1 .sub_title {
+    color: #64748b;
+}
+
+body.light .kwms,
+body.light .card h3,
+body.light .nav .num {
+    color: #00a896;
+}
+
+body.light .card {
+    background: #ffffff;
+    color: #334155;
+    border-color: #e2e8f0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+body.light .card:hover {
+    border-color: #00a896;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+body.light .btn-mode,
+body.light .btn-switch {
+    background-color: #e2e8f0;
+    color: var(--navy-deep);
+}
+
+body.light .form_contact {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+body.light .form_contact h3 {
+    color: var(--navy-deep);
+}
+
+body.light .form_contact label {
+    color: #00a896;
+}
+
+body.light .form_contact input,
+body.light .form_contact textarea {
+    background: #f1f5f9;
+    color: var(--navy-deep);
+    border: 1px solid #cbd5e1;
+}
+
+body.light .form_contact input::placeholder,
+body.light .form_contact textarea::placeholder {
+    color: #94a3b8;
+    opacity: 0.8;
+}
+
+body.light .form_contact button {
+    background: var(--navy-deep);
+    color: #ffffff;
+    border-color: var(--navy-deep);
+}
+
+body.light .form_contact button:hover {
+    background: #00a896;
+    color: #ffffff;
+    border-color: #00a896;
+    box-shadow: 0 0 15px rgba(0, 168, 150, 0.3);
+}
+
+body.light .warning.error {
+    background-color: #fef2f2;
+    color: #991b1b;
+    border-color: #f87171;
+}
+
+body.light .warning.success {
+    background-color: #f0fdf4;
+    color: #166534;
+    border-color: #4ade80;
+}
+
+body.light footer {
+    background-color: #e2e8f0;
+    color: var(--navy-deep);
+}
+
 @media (max-width: 600px) {
     #btn-menu {
         background-color: #061932;
@@ -363,5 +470,18 @@ footer {
         border-radius: 16px;
         box-shadow: 0 20px 50px #00000025;
         position: relative;
+    }
+
+    body.light #btn-menu {
+        background-color: #e2e8f0;
+        color: var(--navy-deep);
+    }
+
+    body.light li {
+        background-color: #e2e8f0;
+    }
+
+    body.light .form_contact {
+        background: #ffffff;
     }
 }

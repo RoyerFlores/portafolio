@@ -20,6 +20,7 @@
         @yield('main')
     </main>
     @include('layouts.partials.footer')
+    <script src="{{ asset('assets/js/script.js') }}"></script>
 </body>
 
 </html>

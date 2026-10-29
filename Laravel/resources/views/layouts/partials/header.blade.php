@@ -1,5 +1,5 @@
 <header class="topbar">
-  <a class="brand" href="#inicio" aria-label="Inicio">
+  <a class="brand" href="{{ url('/login') }}" aria-label="Inicio">
     <svg viewBox="0 0 36 40" width="36" height="40" aria-hidden="true">
       <path d="M18 1.8 33.5 10.7v18L18 37.6 2.5 28.7v-18Z" fill="none" stroke="#00f5df" stroke-width="1.1" />
       <text x="18" y="24" text-anchor="middle" fill="#00f5df" font-family="Arial, sans-serif" font-size="10"
