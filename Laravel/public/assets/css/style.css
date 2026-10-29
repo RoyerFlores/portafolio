@@ -357,6 +357,11 @@ body.light .btn-switch {
     color: var(--navy-deep);
 }
 
+body.light .li {
+    background-color: #e2e8f0;
+    color: var(--navy-deep);
+}
+
 body.light .form_contact {
     background: #ffffff;
     border: 1px solid #e2e8f0;
