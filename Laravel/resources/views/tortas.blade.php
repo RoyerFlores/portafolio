@@ -14,6 +14,7 @@
                 <th><strong>Sabor</strong></th>
                 <th></th>
                 <th><strong>Precio</strong></th>
+                <th><strong>Stock</strong></th>
             </tr>
         </thead>
         <tbody>
@@ -22,6 +23,7 @@
                     <td>{{ $torta->sabor }}</td>
                     <td>............</td>
                     <td>{{ $torta->precio }} Bs.</td>
+                    <td>{{ $torta->stock }}</a></td>
                 </tr>
             @endforeach
         </tbody>

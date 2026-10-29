@@ -89,15 +89,19 @@ Route::get('tortas/nuevo', function () {
 Route::post('tortas/nuevo', function (Request $request) {
     $request->validate([
         'sabor' => 'required',
-        'precio' => 'required|integer'
+        'precio' => 'required|integer',
+        'stock' => 'required|integer'
     ], [
         'sabor.required' => 'Indica el sabor de la torta.',
         'precio.required' => 'Indica el precio de la torta.',
         'precio.integer' => 'El precio va en digitos, sin centavos.',
+        'stock.required' => 'Indica el stock de la torta.',
+        'stock.integer' => 'El stock va en digitos.',
     ]);
     Torta::create([
         'sabor' => request()->sabor,
         'precio' => request()->precio,
+        'stock' => request()->stock,
     ]);
     return redirect('tortas');
 });

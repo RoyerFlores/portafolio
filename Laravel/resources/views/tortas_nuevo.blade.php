@@ -18,6 +18,12 @@
                 <div class="error" style="color: red">{{ $message }}</div>
             @enderror
             <br>
+            <label>Stock:</label>
+            <input type="number" id="stock" name="stock">
+            @error('stock')
+                <div class="error" style="color: red">{{ $message }}</div>
+            @enderror
+            <br>
             <button type="submit" id="agregar">Agregar torta</button>
         </form>
     </div>
